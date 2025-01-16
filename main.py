@@ -1,9 +1,17 @@
 
 import streamlit as st
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_community.document_loaders.csv_loader import CSVLoader
-from langchain_community.embeddings import HuggingFaceInstructEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
+from langchain_helper import get_qa_chain, create_vector_db
 
+st.title("Vesta Equity Q&A 🌱")
+btn = st.button("Create Knowledgebase")
+if btn:
+    create_vector_db()
+
+question = st.text_input("Question: ")
+
+if question:
+    chain = get_qa_chain()
+    response = chain(question)
+
+    st.header("Answer")
+    st.write(response["result"])

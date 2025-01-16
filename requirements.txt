@@ -4,6 +4,8 @@ langchain
 streamlit
 TIME-python
 langchain_google_genai
-dotenv
+python-dotenv
 langchain_community
 faiss-cpu
+sentence-transformers==2.2.2
+huggingface_hub==0.25.0
