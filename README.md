@@ -1,4 +1,3 @@
-```markdown
 # Vesta Equity FAQ Assistant 🏠
 
 This project provides a streamlined solution for navigating Vesta Equity's FAQ page by leveraging a custom-built Q&A system. The system uses advanced AI models, embeddings, and a vector database to deliver accurate and efficient answers to user queries. By eliminating the need to manually search through multiple categories, this tool saves time and improves user experience.
