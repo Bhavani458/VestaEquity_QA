@@ -84,14 +84,6 @@ This project provides a streamlined solution for navigating Vesta Equity's FAQ p
 
 ---
 
-## Example Dataset (`faqs.csv`) 📂
-
-| **prompt**                           | **response**                                                                                                                                       |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------| | Does Vesta Equity Provide Loans?     | There is no lending on Vesta Equity. Property owners can list a portion of equity they want to sell by setting a percentage and a desired amount    |                                      | that accredited investors can negotiate and purchase. Once the transaction is approved by Vesta Equity, the investor fully owns the equity they’ve   |                                      | purchased and the property owner receives the negotiated funds. These funds belong to the property owner who can use them at their own discretion.  |
-| What is Vesta Equity?                | Vesta Equity provides solutions for home equity and real estate investment. |
-
----
-
 ## Benefits 🌟
 
 - **Time-Saving**: Quickly answers specific questions without searching through multiple categories.
