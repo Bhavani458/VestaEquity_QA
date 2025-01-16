@@ -1,7 +1,8 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_openai import OpenAI
 from langchain_community.document_loaders.csv_loader import CSVLoader
 from langchain_community.embeddings import HuggingFaceInstructEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
@@ -12,7 +13,7 @@ import os
 load_dotenv()
 
 #loading google gemini ai with api_key, setting temperature to 0.1 for least creativity 
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro",google_api_key=os.environ["GEMINI_API_KEY"], temperature=0.1)
+llm = OpenAI(temperature=0.2, max_tokens=500)
 
 #using instructor embedding and default model
 instructor_embeddings = HuggingFaceInstructEmbeddings(

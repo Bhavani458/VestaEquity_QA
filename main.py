@@ -2,8 +2,9 @@
 import streamlit as st
 from langchain_helper import get_qa_chain, create_vector_db
 
-st.title("Vesta Equity Q&A 🌱")
-btn = st.button("Create Knowledgebase")
+st.title("Vesta Equity Q&A 🏠")
+st.header("Process all FAQs by clicking the below button:")
+btn = st.button("Process FAQs")
 if btn:
     create_vector_db()
 
